@@ -3,7 +3,7 @@
 Syntax highlighting for DOL files.
 
 DOL-files are ontology-defining files of the
-(**Distributed Ontology Language**)[dol]
+[**Distributed Ontology Language**][dol]
 
 ## What it does
 
