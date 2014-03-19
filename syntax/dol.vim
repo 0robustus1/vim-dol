@@ -11,11 +11,13 @@ elseif exists("b:current_syntax")
 endif
 
 " Basic Keywords
-syn keyword dolLogic logic nextgroup=dolLogicConstant skipwhite
 syn keyword dolOntologyRangeWords ontology end
 syn keyword dolImportWords with
 syn keyword dolDefinition then
-syn keyword dolLogicConstant OWL CASL CLIF
+
+" Complex grouped Keywords
+syn keyword dolLogic logic nextgroup=dolLogicConstant skipwhite
+syn keyword dolLogicConstant OWL CASL CommonLogic
 
 " Comments
 syn region dolComment matchgroup=dolComment start='\%(^\|\s\)%%' end='$'
