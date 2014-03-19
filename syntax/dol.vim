@@ -19,6 +19,8 @@ syn keyword dolOperators and hide reveal
 " Complex grouped Keywords
 syn keyword dolLogic logic nextgroup=dolLogicConstant skipwhite
 syn keyword dolLogicConstant OWL CASL CommonLogic
+syn keyword dolOntologyNameKeyword distributed-ontology nextgroup=dolOntologyName skipwhite
+syn region dolOntologyName start="." matchgroup=OntologyName end="$" contained
 
 " Comments
 syn region dolComment matchgroup=dolComment start='\%(^\|\s\)%%' end='$'
@@ -29,6 +31,8 @@ hi def link dolComment Comment
 hi def link dolOntologyRangeWords Keyword
 hi def link dolLogic Keyword
 hi def link dolLogicConstant Type
+hi def link dolOntologyNameKeyword Keyword
+hi def link dolOntologyName Type
 hi def link dolImportWords Special
 hi def link dolDefinition Operator
 hi def link dolOperators Operator
