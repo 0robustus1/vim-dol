@@ -14,6 +14,7 @@ endif
 syn keyword dolOntologyRangeWords ontology end
 syn keyword dolImportWords with
 syn keyword dolDefinition then
+syn keyword dolOperators and hide reveal
 
 " Complex grouped Keywords
 syn keyword dolLogic logic nextgroup=dolLogicConstant skipwhite
@@ -30,5 +31,6 @@ hi def link dolLogic Keyword
 hi def link dolLogicConstant Type
 hi def link dolImportWords Special
 hi def link dolDefinition Operator
+hi def link dolOperators Operator
 
 
