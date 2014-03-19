@@ -10,7 +10,6 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syn keyword tmuxKeywords set setw set-option set-window-option nextgroup=tmuxGlobalSwitch,tmuxSwitch skipwhite
 " Basic Keywords
 syn keyword dolLogic logic nextgroup=dolLogicConstant skipwhite
 syn keyword dolOntologyRangeWords ontology end
